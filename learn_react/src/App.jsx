@@ -7,6 +7,8 @@ const App = () => {
     <div>
       <Crad />
       <Navbar />
+       <Crad />
+      <Navbar />
     </div>
   )
 }
