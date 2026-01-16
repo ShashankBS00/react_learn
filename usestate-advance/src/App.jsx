@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const App = () => {
-  const [name, setName] = useState('Enter name')
+  const [name, setName] = useState('Enter namey')
   const submitHandler = (e) => {
     e.preventDefault()
     console.log('form submitted',name)
