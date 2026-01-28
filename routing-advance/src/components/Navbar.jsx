@@ -11,12 +11,7 @@ const Navbar = () => {
         <Link to="/product" className="text-white font-semibold hover:text-yellow-300 transition">
           Product
         </Link>
-        <Link to="/men" className="text-white font-semibold hover:text-yellow-300 transition">
-          Men
-        </Link>
-        <Link to="/women" className="text-white font-semibold hover:text-yellow-300 transition">
-          Women
-        </Link>
+       
         <Link to="/contact" className="text-white font-semibold hover:text-yellow-300 transition">
           Contact
         </Link>

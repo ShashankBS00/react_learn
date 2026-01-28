@@ -7,25 +7,21 @@ import Product from './pages/Product.jsx'
 import Men from './pages/Men.jsx'
 import Women from './pages/Women.jsx'
 import Contact from './pages/Contact.jsx'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Router } from 'react-router-dom'
 const App = () => {
   return (
-    <div>
+    <div >
+      <Navbar />
       
-<Navbar />
-      <Hedder />
-      <Router>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/product' element={<Product />} />
-          <Route path='/product/men' element={<Men />} />
-          <Route path='/product/women' element={<Women />} />
+          <Route path='/product' element={<Product />} >
+              <Route path='men' element={<Men />} />
+              <Route path='women' element={<Women />} />
+          </Route>
           <Route path='/contact' element={<Contact />} />
         </Routes>
-      </Router>
-      <Footer />
-
-    
+      <Footer />    
             </div>
   )
 }
